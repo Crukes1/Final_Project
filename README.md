@@ -14,6 +14,12 @@
 <p> Rodger and Linda Scarberry and Steve and Mary Mallette were driving down State Route 62 when they saw a dark figure standing at six to seven feet tall in their headlight with glowing red eyes.</p>
 
 ### Core Webpages
+<p>Home Page(index): Main landing page</p>
+<p>About Page: Background and motivation around the project</p>
+<p>Project Page: Deep dive into Mothman, key takeaways.</p>
+<p>Media Page:Section for photos or videos. </p>
+<p>Contact Page:Section where people can find contact information or connect with the project team.</p>
+<p>Additional pages can be developed during the making of the project</p>
 
 ### Design Choices
 
