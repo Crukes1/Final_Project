@@ -6,6 +6,8 @@
 
 ### Live Link
 
+<p>https://crukes1.github.io/Final_Project/</p>
+
 ### Key Takeaways
 
 <p>November 15, 1966 is when Mothman emerged from either the the pits of hell or from space.</p>
@@ -26,3 +28,7 @@ https://mothmanmythology.home.blog/
 </p>
 
 ### Members & Responsiblities
+
+<p>Charlsie - President, Analyst, Designer</p>
+<p>Melody - Scrum Master </p>
+<p>Isabella - Architect </p>
