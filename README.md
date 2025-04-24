@@ -37,4 +37,3 @@ https://mothmanmythology.home.blog/
 
 <p>Charlsie - President, Analyst, Designer</p>
 <p>Melody - Scrum Master </p>
-<p>Isabella - Architect </p>
