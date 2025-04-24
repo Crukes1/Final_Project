@@ -15,11 +15,11 @@
 
 ### Core Webpages
 <p>Home Page(index): Main landing page.</p>
-<p>About Page: Background and motivation around the project.</p>
-<p>Project Page: Deep dive into Mothman, key takeaways.</p>
-<p>Media Page:Section for photos or videos. </p>
-<p>Contact Page:Section where people can find contact information or connect with the project team.</p>
-<p>Additional pages can be developed during the making of the project.</p>
+<p>History: Background and motivation around the project.</p>
+<p>Sightings: Deep dive into Mothman, key takeaways.</p>
+<p>Media Page: Section for photos or videos. </p>
+<p>Contact Page: Section where people can find contact information or connect with the project team.</p>
+
 
 ### Design Choices
 
@@ -35,5 +35,5 @@ https://mothmanmythology.home.blog/
 
 ### Members & Responsiblities
 
-<p>Charlsie - President, Analyst, Designer</p>
-<p>Melody - Scrum Master </p>
+<p>Charlsie - President, Analyst, Designer (Home page, History, Sightings)</p>
+<p>Melody - Scrum Master (Media page, Contact) </p>
