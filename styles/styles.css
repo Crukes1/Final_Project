@@ -93,3 +93,91 @@ footer {
   border-radius: 10px;
 }
 
+
+
+.contact-form-container {
+  background-color: #222;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  margin-top: 2em;
+}
+
+.contact-form-container h2 {
+  color: rgb(210, 4, 4);
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.form-group label {
+  display: block;
+  color: rgb(210, 4, 4);
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 2px solid rgba(210, 4, 4, 0.6);
+  background-color: #111;
+  color: white;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: rgb(210, 4, 4);
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button[type="submit"] {
+  width: 100%;
+  background-color: rgb(210, 4, 4);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: darkred;
+}
+
+#formStatus {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: lightgreen;
+}
+
+
+@media (max-width: 600px) {
+  .contact-form-container {
+    padding: 20px;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+  }
+}
