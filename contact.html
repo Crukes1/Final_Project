@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mothman Gallery</title>
+    <title>Contact Mothman Lore</title>
     <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
@@ -20,42 +20,82 @@
       </nav>
     </header>
 
-    <div class="card">
-      <h2>Contact Us</h2>
-      <form id="contactForm" onsubmit="return validateForm()">
-        <div class="row">
-          <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" id="firstName" name="firstName" required />
-          </div>
+    <main class="contact-container">
+      <div class="card">
+        <h2>Contact Us</h2>
+        <form id="contactForm" onsubmit="return validateForm()">
+          <div class="row">
+            <div class="col">
+              <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label for="surname">Last Name</label>
-            <input type="text" id="surname" name="surname" required />
-          </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="surname">Last Name</label>
+                <input type="text" id="surname" name="surname" required />
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required />
-          </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+            </div>
 
-          <div class="form-group">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" />
-          </div>
+            <div class="col">
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
 
-          <div class="form-group full-width">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-          </div>
+            <div class="col" style="grid-column: span 2">
+              <div class="form-group" style="height: 150px">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  style="height: 100%; resize: none"
+                ></textarea>
+              </div>
+            </div>
 
-          <div class="form-group full-width">
-            <input type="submit" value="Submit" />
+            <div class="col" style="grid-column: span 2">
+              <input type="submit" value="Submit" />
+            </div>
           </div>
-        </div>
+          <p
+            id="formStatus"
+            style="text-align: center; margin-top: 20px; color: white"
+          ></p>
+        </form>
+      </div>
+    </main>
 
-        <p id="formStatus"></p>
-      </form>
-    </div>
+    <script>
+      function validateForm() {
+        const firstName = document.getElementById("firstName").value.trim();
+        const surname = document.getElementById("surname").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const status = document.getElementById("formStatus");
+
+        if (!firstName || !surname || !email || !message) {
+          status.textContent = "Please complete all required fields.";
+          status.style.color = "crimson";
+          return false;
+        }
+
+        status.textContent =
+          "Thanks for your message! Mothman may be watching...";
+        status.style.color = "lightgreen";
+        return false;
+      }
+    </script>
   </body>
 </html>
