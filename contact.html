@@ -30,8 +30,8 @@
           </div>
 
           <div class="form-group">
-            <label for="lastName">Last Name</label>
-            <input type="text" id="lastName" name="lastName" required />
+            <label for="surname">Last Name</label>
+            <input type="text" id="surname" name="surname" required />
           </div>
 
           <div class="form-group">
@@ -46,33 +46,13 @@
 
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+            <textarea id="message" name="message" required></textarea>
           </div>
 
           <button type="submit">Submit</button>
+          <p id="formStatus"></p>
         </form>
-        <p id="formStatus"></p>
       </div>
     </main>
-
-    <script>
-      function validateForm() {
-        const firstName = document.getElementById("firstName").value.trim();
-        const lastName = document.getElementById("lastName").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById("message").value.trim();
-        const status = document.getElementById("formStatus");
-
-        if (!firstName || !lastName || !email || !message) {
-          status.textContent = "Please fill out all required fields.";
-          status.style.color = "crimson";
-          return false;
-        }
-
-        status.textContent = "Message sent! Mothman may be watching...";
-        status.style.color = "lightgreen";
-        return false;
-      }
-    </script>
   </body>
 </html>
