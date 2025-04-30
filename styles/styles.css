@@ -1,5 +1,5 @@
 
-body {
+/* body {
   font-family: Arial, sans-serif;
   background-color: #111;
   color: #eee;
@@ -58,7 +58,7 @@ footer {
 /* gallery page */
 
 
-.gallery {
+/* .gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -95,8 +95,105 @@ footer {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
+}  */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(210, 4, 4);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+nav a {
+  color: rgb(210, 4, 4); /* Corrected the color definition */
+  text-decoration: none;
+}
+
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background-color: #222;
+}
+
+.hero-image {
+  background-image: url('your-image.jpg'); /* Add the path to your image */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 400px; /* Set a height for the hero section */
+  color: white;
 }
 
 
-/* contact page  */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img {
+  width: 300px;
+  height: auto;
+  cursor: pointer;
+  border: 3px solid #444;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
 
