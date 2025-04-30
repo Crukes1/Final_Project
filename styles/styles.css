@@ -1,3 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #222;
+  padding: 1em;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+h2{
+  text-align: center;
+  color: rgb(210, 4, 4);
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
 
 nav a {
   color: 
@@ -63,109 +92,4 @@ footer {
   max-width: 90%;
   max-height: 90%;
   border-radius: 10px;
-}
-
-
-.contact-form-container {
-  background-color: #222;
-  border-radius: 10px;
-  padding: 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
-  margin-bottom: 2em;
-}
-
-.contact-form-container h2 {
-  color: rgb(210, 4, 4);
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.contact-form-container .form-group {
-  margin-bottom: 15px;
-}
-
-.contact-form-container .form-group label {
-  display: block;
-  color: rgb(210, 4, 4);
-  margin-bottom: 5px;
-}
-
-.contact-form-container .form-group input,
-.contact-form-container .form-group textarea {
-  width: 100%;
-  padding: 12px;
-  border-radius: 5px;
-  border: 2px solid rgb(210, 4, 4);
-  background-color: #111;
-  color: white;
-  font-size: 16px;
-}
-
-.contact-form-container .form-group input:focus,
-.contact-form-container .form-group textarea:focus {
-  border-color: rgb(210, 4, 4);
-  outline: none;
-}
-
-.contact-form-container button {
-  width: 100%;
-  background-color: rgb(210, 4, 4);
-  color: white;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
-}
-
-.contact-form-container button:hover {
-  background-color: darkred;
-}
-
-/* Form Submission Status */
-#formStatus {
-  text-align: center;
-  margin-top: 20px;
-  color: lightgreen;
-  font-weight: bold;
-}
-
-
-.lightbox {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
-  z-index: 999;
-}
-
-.lightbox img {
-  max-width: 90%;
-  max-height: 90%;
-  border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  .contact-form-container {
-    padding: 20px;
-  }
-
-  .contact-form-container h2 {
-    font-size: 24px;
-  }
-
-  .contact-form-container .form-group input,
-  .contact-form-container .form-group textarea {
-    font-size: 14px;
-  }
-
-  .contact-form-container button {
-    font-size: 14px;
-  }
 }
