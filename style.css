@@ -99,7 +99,7 @@ footer {
 
 
 
-.contact-section {
+/* .contact-section {
   max-width: 600px;
   margin: 0 auto;
   padding: 30px;
@@ -167,4 +167,32 @@ button:hover {
   margin-top: 15px;
   font-weight: bold;
   text-align: center;
+} */
+
+
+.card {
+  background: #222; /* darker background for Mothman aesthetic */
+  border-color: rgba(255, 0, 0, 0.2); /* red glow border */
+  box-shadow: 20px 20px 0 rgba(255, 0, 0, 0.2);
+}
+
+.card h2 {
+  color: crimson;
+}
+
+.card .row .form-group input,
+.card .row .form-group textarea {
+  background: #333;
+  border-color: rgba(255, 0, 0, 0.3);
+  box-shadow: 10px 10px 0 rgba(255, 0, 0, 0.2);
+}
+
+.card .row input[type="submit"] {
+  border-color: rgba(255, 0, 0, 0.4);
+  color: crimson;
+}
+
+.card .row input[type="submit"]:hover {
+  background-color: crimson;
+  color: #fff;
 }
