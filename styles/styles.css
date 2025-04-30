@@ -177,14 +177,3 @@ footer {
   margin-top: 20px;
   color: red;
 }
-
-@media screen and (max-width: 768px) {
-  .card {
-    width: 90%;
-    padding: 20px;
-  }
-
-  .card h2 {
-    font-size: 28px;
-  }
-}
