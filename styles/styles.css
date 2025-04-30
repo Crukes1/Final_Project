@@ -57,7 +57,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 80vh; /* avoid overlapping with navbar */
+  min-height: 80px; 
   padding: 40px 20px;
 }
 
