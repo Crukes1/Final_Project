@@ -1,10 +1,10 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Mothman Lore</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Mothman Gallery</title>
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <header>
@@ -19,146 +19,49 @@
         </ul>
       </nav>
     </header>
-    <main>
+
+    <div class="card">
       <h2>Contact Us</h2>
-      <form id="contactForm" onsubmit="return validateForm()">
-        <label for="name">Name:</label>
-        <input type="text" id="name" required />
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label>First Name</label>
+            <input type="text" />
+          </div>
+        </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" required />
+        <div class="col">
+          <div class="form-group">
+            <label>Surname</label>
+            <input type="text" />
+          </div>
+        </div>
 
-        <label for="message">Message:</label>
-        <textarea id="message" rows="5" required></textarea>
+        <div class="col">
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" />
+          </div>
+        </div>
 
-        <button type="submit">Send Message</button>
-        <p id="formStatus"></p>
-      </form>
-    </main>
-    <script>
-      function validateForm() {
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById("message").value.trim();
-        const status = document.getElementById("formStatus");
+        <div class="col">
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text" />
+          </div>
+        </div>
 
-        if (!name || !email || !message) {
-          status.textContent = "All fields are required.";
-          status.style.color = "red";
-          return false;
-        }
+        <div class="col">
+          <div class="form-group">
+            <label>Message</label>
+            <textarea></textarea>
+          </div>
+        </div>
 
-        status.textContent = "Thank you! Your message has been sent.";
-        status.style.color = "lightgreen";
-        return false;
-      }
-    </script>
+        <div class="col">
+          <input type="submit" value="Submit" />
+        </div>
+      </div>
+    </div>
   </body>
-</html> -->
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Mothman Lore</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
-      <h1>Mothman Lore</h1>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="history.html">History</a></li>
-          <li><a href="sightings.html">Sightings</a></li>
-          <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="contact-section">
-        <h2>Contact the Mothman Society</h2>
-        <p>Seen something strange? Got a theory? We'd love to hear from you.</p>
-        <form id="contactForm" onsubmit="return validateForm()">
-          <label for="name">Name</label>
-          <input type="text" id="name" required />
-
-          <label for="email">Email</label>
-          <input type="email" id="email" required />
-
-          <label for="message">Your Message</label>
-          <textarea id="message" rows="5" required></textarea>
-
-          <button type="submit">Send Message</button>
-          <p id="formStatus"></p>
-        </form>
-      </section>
-    </main>
-
-    <script>
-      function validateForm() {
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const message = document.getElementById("message").value.trim();
-        const status = document.getElementById("formStatus");
-
-        if (!name || !email || !message) {
-          status.textContent = "Please fill out all fields.";
-          status.style.color = "crimson";
-          return false;
-        }
-
-        status.textContent = "Message sent! Expect a shadow in the sky soon.";
-        status.style.color = "lightgreen";
-        return false; // prevents real submission
-      }
-    </script>
-  </body>
-</html> -->
-
-<div class="card">
-  <h2>Contact Us</h2>
-  <div class="row">
-    <div class="col">
-      <div class="form-group">
-        <label>First Name</label>
-        <input type="text" />
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="form-group">
-        <label>Surname</label>
-        <input type="text" />
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="form-group">
-        <label>Email</label>
-        <input type="text" />
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="form-group">
-        <label>Phone</label>
-        <input type="text" />
-      </div>
-    </div>
-
-    <div class="col">
-      <div class="form-group">
-        <label>Message</label>
-        <textarea></textarea>
-      </div>
-    </div>
-
-    <div class="col">
-      <input type="submit" value="Submit" />
-    </div>
-  </div>
-</div>
+</html>
