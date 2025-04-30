@@ -53,6 +53,14 @@ footer {
  justify-content: space-evenly;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* avoid overlapping with navbar */
+  padding: 40px 20px;
+}
+
 /* gallery page */
 
 
@@ -99,14 +107,11 @@ footer {
 /* contact page  */
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
   margin: 0;
   background-color: #111; 
   font-family: Arial, sans-serif;
 }
+
 
 .card {
   width: 50%;
