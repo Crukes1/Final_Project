@@ -99,8 +99,8 @@ footer {
 
 
 .card {
-  background: #222; /* darker background for Mothman aesthetic */
-  border-color: rgba(255, 0, 0, 0.2); /* red glow border */
+  background: #222; 
+  border-color: rgba(255, 0, 0, 0.2); 
   box-shadow: 20px 20px 0 rgba(255, 0, 0, 0.2);
 }
 
