@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Mothman Lore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Mothman Lore</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="sightings.html">Sightings</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact Us</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+        <p id="formStatus"></p>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2025 Mothman Lore Project</p>
+    </footer>
+    <script>
+      function validateForm() {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const status = document.getElementById("formStatus");
+
+        if (!name || !email || !message) {
+          status.textContent = "All fields are required.";
+          status.style.color = "red";
+          return false;
+        }
+
+        status.textContent = "Thank you! Your message has been sent.";
+        status.style.color = "lightgreen";
+        return false; // prevents actual submission
+      }
+    </script>
+  </body>
+</html>
