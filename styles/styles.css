@@ -1,4 +1,4 @@
-.body {
+body {
   font-family: Arial, sans-serif;
   background-color: #111;
   color: #eee;
@@ -6,21 +6,21 @@
   padding: 0;
 }
 
-.header {
+header {
   background-color: #222;
   padding: 1em;
   text-align: center;
 }
 
-.header h1 {
+header h1 {
   margin: 0;
   text-align: center;
 }
-.h2{
+h2{
   text-align: center;
   color: rgb(210, 4, 4);
 }
-.nav ul {
+nav ul {
   list-style: none;
   padding: 0;
   display: flex;
@@ -28,19 +28,19 @@
   gap: 1em;
 }
 
-.nav a {
+nav a {
   color: 
   rgb(210, 4, 4);
   text-decoration: none;
 }
 
-.main {
+main {
   padding: 2em;
   max-width: 800px;
   margin: auto;
 }
 
-.footer {
+footer {
   text-align: center;
   padding: 1em;
   background-color: #222;
@@ -64,7 +64,7 @@
 }
 
 .gallery img {
-  width: 220px;
+  width: 300px;
   height: auto;
   cursor: pointer;
   border: 3px solid #444;
