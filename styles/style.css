@@ -96,29 +96,3 @@ footer {
 }
 
 
-.card {
-  background: #222; 
-  border-color: rgba(255, 0, 0, 0.2); 
-  box-shadow: 20px 20px 0 rgba(255, 0, 0, 0.2);
-}
-
-.card h2 {
-  color: crimson;
-}
-
-.card .row .form-group input,
-.card .row .form-group textarea {
-  background: #333;
-  border-color: rgba(255, 0, 0, 0.3);
-  box-shadow: 10px 10px 0 rgba(255, 0, 0, 0.2);
-}
-
-.card .row input[type="submit"] {
-  border-color: rgba(255, 0, 0, 0.4);
-  color: crimson;
-}
-
-.card .row input[type="submit"]:hover {
-  background-color: crimson;
-  color: #fff;
-}
