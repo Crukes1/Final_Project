@@ -177,3 +177,18 @@ body {
   margin-top: 20px;
   color: red;
 }
+
+.card .row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.card .form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.card .form-group.full-width {
+  grid-column: span 2;
+}
