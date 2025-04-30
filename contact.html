@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mothman Gallery</title>
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
   </head>
   <body>
     <header>
@@ -68,7 +68,7 @@
   
           <div class="col">
             <div class="form-group">
-              <label>Surname</label>
+              <label>Last Name</label>
               <input type="text" />
             </div>
           </div>
@@ -106,4 +106,80 @@
     </div>
   </div>
     </body>
-  </html>
+  </html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Mothman Lore</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="card">
+      <h2>Contact</h2>
+      <form id="contactForm" onsubmit="return validateForm()">
+        <div class="row">
+          <div class="col">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+          </div>
+
+          <div class="col" style="grid-column: span 2">
+            <div class="form-group" style="height: 150px">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                style="height: 100%; resize: none"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="col" style="grid-column: span 2">
+            <input type="submit" value="Send Message" />
+          </div>
+        </div>
+        <p
+          id="formStatus"
+          style="text-align: center; margin-top: 20px; color: white"
+        ></p>
+      </form>
+    </div>
+
+    <script>
+      function validateForm() {
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const message = document.getElementById("message").value.trim();
+        const status = document.getElementById("formStatus");
+
+        if (!name || !email || !message) {
+          status.textContent = "Please complete all fields.";
+          status.style.color = "crimson";
+          return false;
+        }
+
+        status.textContent =
+          "Thanks for reaching out! We'll get back to you soon.";
+        status.style.color = "lightgreen";
+        return false; // prevent actual submission
+      }
+    </script>
+  </body>
+</html>
