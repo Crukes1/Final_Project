@@ -191,5 +191,6 @@ button[type="submit"]:hover {
 
   button[type="submit"] {
     font-size: 14px;
+    justify-content: center;
   }
 }
