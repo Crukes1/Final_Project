@@ -20,6 +20,7 @@ h2{
   text-align: center;
   color: rgb(210, 4, 4);
   justify-content: center;
+  padding:1em;
 }
 nav ul {
   list-style: none;
